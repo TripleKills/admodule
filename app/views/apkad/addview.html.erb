@@ -1,0 +1,67 @@
+#pkg_name, pic_url, pkg_url, status, weight, allowmobile, size, price, ad_type
+<form name=form1>
+  包名 ×:
+  <input type="text" name="pkg_name"/>
+  <br/>
+  图片链接×:
+  <input type="text" name="pic_url"/>
+  <br/>
+  包链接 ×:
+  <input type="text" name="pkg_url"/>
+  <br/>
+  状态 :
+  <select name="status">
+    <option value="test" selected="selected">测试</option>
+    <option value="open">打开</option>
+    <option value="close">关闭</option>
+  </select>
+  <br/>
+  权重 :
+  <select name="weight">
+    <option value="1.0" selected="selected">1.0</option>
+    <option value="1.1">1.1</option>
+    <option value="1.2">1.2</option>
+    <option value="1.4">1.4</option>
+    <option value="1.6">1.6</option>
+    <option value="2.0">2.0</option>
+    <option value="2.5">2.5</option>
+    <option value="3.0">3.0</option>
+    <option value="4.0">4.0</option>
+    <option value="6.0">6.0</option>
+    <option value="10.0">10.0</option>
+  </select>
+  <br/>
+  网络:
+  <input type="checkbox" name="allowmobile" checked="true"/>
+  允许非wifi状况下展示和下载
+  <br/>
+  大小 ×:
+  <input type="text" name="size"/>
+  <br/>
+  价格 ×:
+  <input type="text" name="price"/>
+  <br/>
+  广告类型 :
+  <select name="ad_type">
+    <option value="chap" selected="selected">插屏</option>
+  </select>
+
+
+  <br/>
+  <button id="button" type="submit" onclick="checkForm()">提交</button>
+</form>
+<script>
+
+    function checkForm() {
+        var input_cart = document.getElementsByTagName('INPUT')
+        for (var i = 0; i < input_cart.length; i++) {
+            if (input_cart[i].value == "" || input_cart[i].value == null) {
+                alert(input_cart[i].name + "不能为空!");
+                input_cart[i].focus();
+                return (false);
+            }
+        }
+
+        document.forms['BusinessInfoForm'].submit();
+    }
+</script>

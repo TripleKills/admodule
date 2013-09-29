@@ -23,4 +23,8 @@ class ApkadController < ApplicationController
     end
     render :json=>{'result_code'=>result_code, 'result_msg'=>result_msg}
   end
+
+  def addview
+     logger.debug(params[:firstname])
+  end
 end
