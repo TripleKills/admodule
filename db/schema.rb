@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130929124442) do
+ActiveRecord::Schema.define(version: 20130929134531) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -28,12 +28,21 @@ ActiveRecord::Schema.define(version: 20130929124442) do
   add_index "active_admin_comments", ["namespace"], name: "index_active_admin_comments_on_namespace", using: :btree
   add_index "active_admin_comments", ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id", using: :btree
 
+  create_table "ad_channels", force: true do |t|
+    t.string   "chname"
+    t.string   "chvalue"
+    t.string   "chdescrip",  default: "default description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "ad_stats", force: true do |t|
     t.integer  "adid"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "adcount"
     t.string   "adaction"
+    t.string   "adchannel",  default: "default"
   end
 
   create_table "admin_users", force: true do |t|

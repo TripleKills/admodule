@@ -1,0 +1,52 @@
+<form name=form1>
+  渠道名 ×:
+  <input type="text" name="channel_name"/>
+  <br/>
+  渠道编号×:
+  <input type="text" name="channel_value"/>
+  <br/>
+  渠道说明 ×:
+  <input type="text" name="channel_description" value="default description"/>
+  <br/>
+
+  <button id="button" type="submit" onclick="checkForm()">提交</button>
+</form>
+<script>
+
+    function checkForm() {
+        var input_cart = document.getElementsByTagName('INPUT')
+        for (var i = 0; i < input_cart.length; i++) {
+            if (input_cart[i].value == "" || input_cart[i].value == null) {
+                alert(input_cart[i].name + "不能为空!");
+                input_cart[i].focus();
+                return (false);
+            }
+        }
+
+        document.forms['BusinessInfoForm'].submit();
+    }
+</script>
+
+<% if @save_result==0 %>
+    <script>
+        alert("添加成功");
+    </script>
+<% end %>
+
+<% if @save_result==1 %>
+    <script>
+        alert("添加失败");
+    </script>
+<% end %>
+
+<% if @save_result==2 %>
+    <script>
+        alert("添加失败，渠道已存在");
+    </script>
+<% end %>
+
+<% if @save_result==3 %>
+    <script>
+        alert("参数错误");
+    </script>
+<% end %>

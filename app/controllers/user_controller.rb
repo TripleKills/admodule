@@ -33,8 +33,16 @@ class UserController < ApplicationController
   def notify
     #adid, adaction, adcount
     #check ad_id is nil
-    if params[:adid].nil? or params[:adaction].nil?
+    if params[:adid].nil? or params[:adaction].nil? or params[:userid].nil? or params[:adchannel].nil?
       render :json => {'result_code'=>2, 'result_msg'=>'parameters error'}.to_json
+      return
+    end
+
+    #check userid is correct
+    begin
+      user = User.find(params[:userid])
+    rescue
+      render :json => {'result_code'=>5, 'result_msg'=>'no this user'}.to_json
       return
     end
 
@@ -46,6 +54,18 @@ class UserController < ApplicationController
       return
     end
 
+    #check adchannel is correct
+    begin
+      ad = AdChannel.find_by_chvalue(params[:adchannel])
+      if ad.nil?
+        render :json => {'result_code'=>4, 'result_msg'=>'no this channel'}.to_json
+        return
+      end
+    rescue
+      render :json => {'result_code'=>4, 'result_msg'=>'no this channel'}.to_json
+      return
+    end
+
     record = AdStats.find_by_adaction_and_adid(params[:adaction], params[:adid])
     result_code = 0
     result_msg = 'success'
@@ -53,6 +73,7 @@ class UserController < ApplicationController
        sts = AdStats.create(
            :adid => params[:adid],
            :adaction => params[:adaction],
+           :adchannel => params[:adchannel],
            :adcount => 1
        )
       begin
@@ -74,6 +95,10 @@ class UserController < ApplicationController
   end
 
   private
+
+  def log_ad_action(params)
+
+  end
 
   def check_user_exist(params)
     param= parseimeisnandroidid(params)
