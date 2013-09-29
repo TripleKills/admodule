@@ -41,9 +41,11 @@ class UserController < ApplicationController
   def is_user_exist(param)
     result = User.find_by_sn_and_androidid_and_imei(param[:sn],param[:androidid],param[:imei])
     exist = !result.nil?
+=begin
     if exist
       result.delete
     end
+=end
     return exist
   end
 

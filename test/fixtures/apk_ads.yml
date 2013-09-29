@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pkg_name: MyString
+  pic_url: MyString
+  pkg_url: MyString
+  status: MyString
+  weight: 1.5
+  net: MyString
+  size: 1.5
+  price: 1.5
+  type: 
+
+two:
+  pkg_name: MyString
+  pic_url: MyString
+  pkg_url: MyString
+  status: MyString
+  weight: 1.5
+  net: MyString
+  size: 1.5
+  price: 1.5
+  type: 

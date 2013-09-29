@@ -1,0 +1,2 @@
+module ApkadHelper
+end
