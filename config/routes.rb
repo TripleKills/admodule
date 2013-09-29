@@ -1,5 +1,7 @@
 Admodule::Application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   get "apkad/add"
   match 'regist'=>'user#regist', :via=>[:get,:post]
   match 'check'=>'user#check', :via=>[:get,:post]
