@@ -30,6 +30,49 @@ class UserController < ApplicationController
     render :json => @result.to_json
   end
 
+  def notify
+    #adid, adaction, adcount
+    #check ad_id is nil
+    if params[:adid].nil? or params[:adaction].nil?
+      render :json => {'result_code'=>2, 'result_msg'=>'parameters error'}.to_json
+      return
+    end
+
+    #check ad_id is correct
+    begin
+      ad = ApkAd.find(params[:adid])
+    rescue
+      render :json => {'result_code'=>3, 'result_msg'=>'no this ad'}.to_json
+      return
+    end
+
+    record = AdStats.find_by_adaction_and_adid(params[:adaction], params[:adid])
+    result_code = 0
+    result_msg = 'success'
+    if record.nil?
+       sts = AdStats.create(
+           :adid => params[:adid],
+           :adaction => params[:adaction],
+           :adcount => 1
+       )
+      begin
+        sts.save!
+      rescue
+        result_code = 1
+        result_msg = 'insert fail'
+      end
+    else
+      record.adcount = record.adcount + 1
+      begin
+        record.save!
+      rescue
+        result_code = 1
+        result_msg = 'insert fail'
+      end
+    end
+    render :json => {'result_code'=>result_code, 'result_msg'=>result_msg}.to_json
+  end
+
   private
 
   def check_user_exist(params)

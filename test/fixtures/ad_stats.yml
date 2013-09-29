@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ad_id: 1
+  show_count: 
+  click_count: 
+  down_count: 
+  install_count: 
+
+two:
+  ad_id: 1
+  show_count: 
+  click_count: 
+  down_count: 
+  install_count: 
