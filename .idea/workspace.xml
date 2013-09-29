@@ -9,7 +9,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380374330136" ignored="false" />
     <file path="/database.yml" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380374538581" ignored="false" />
-    <file path="/user_controller.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380458479078" ignored="false" />
+    <file path="/user_controller.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380459505446" ignored="false" />
     <file path="/routes.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380457309124" ignored="false" />
     <file path="/user.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380426500279" ignored="false" />
     <file path="/apkad_controller.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380445616857" ignored="false" />
@@ -23,6 +23,7 @@
     <file path="/20130929115300_cg_ad_status.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380455675555" ignored="false" />
     <file path="/20130929122942_rename_ad_stats.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380457815546" ignored="false" />
     <file path="/20130929124442_rename_ad_stats.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380458777331" ignored="false" />
+    <file path="/ad_stats.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380459487399" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,16 @@
       <file leaf-file-name="user_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="44" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.6010453">
+            <state line="48" column="44" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.86236936">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ad_stats.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/ad_stats.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="116" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,28 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ad_stats.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/ad_stats.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="47" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="apk_ad.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/apk_ad.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="41" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0">
+            <state line="18" column="79" selection-start="1022" selection-end="1086" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,8 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130929055116_set_apkads_statusdefualt_to_test.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130929070508_rename_apk_ads_type.rb" />
@@ -157,6 +147,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130929122942_rename_ad_stats.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130929124442_rename_ad_stats.rb" />
+        <option value="$PROJECT_DIR$/app/admin/ad_stats.rb" />
+        <option value="$PROJECT_DIR$/app/models/ad_stats.rb" />
         <option value="$PROJECT_DIR$/app/controllers/user_controller.rb" />
       </list>
     </option>
@@ -929,27 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/apk_ad.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="881" selection-end="881" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/apkad_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="57" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/ad_stats.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="47" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130929115300_cg_ad_status.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="47" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
@@ -978,9 +949,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/apk_ad.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="79" selection-start="1022" selection-end="1086" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin/ad_stats.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="2" selection-start="34" selection-end="34" vertical-scroll-proportion="0.026132405">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ad_stats.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="116" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/apkad_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="57" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="44" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.6010453">
+        <state line="48" column="44" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.86236936">
           <folding />
         </state>
       </provider>
