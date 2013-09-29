@@ -1,5 +1,5 @@
 class ApkAd < ActiveRecord::Base
-  #pkg_name, pic_url, pkg_url, status, weight, allowmobile, size, price, type
+  #pkg_name, pic_url, pkg_url, status, weight, allowmobile, size, price, ad_type
   #price要大于0,allowmobile只能是yes或no,weight要大于0,status只能是open,test,close这三种状态，size要大于0
   #pkg_name, pic_url, pkg_url, price, size必须不为空
   validates_presence_of :pkg_name, :pic_url, :pkg_url, :price, :size, :message=>'some one not presence'

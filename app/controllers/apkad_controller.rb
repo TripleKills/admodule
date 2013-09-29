@@ -1,17 +1,18 @@
 class ApkadController < ApplicationController
-  #pkg_name, pic_url, pkg_url, status, weight, allowmobile, size, price, type
+  #pkg_name, pic_url, pkg_url, status, weight, allowmobile, size, price, ad_type
+  #新建一条广告
   def add
     apk_ad = ApkAd.create(
         :pkg_name=>params[:pkg_name],
         :pic_url=>params[:pic_url],
         :pkg_url=>params[:pkg_url],
-        :status=>params[:status],
-        :weight=>params[:weight],
-        :allowmobile=>params[:allowmobile],
         :size=>params[:size],
-        :price=>params[:price],
-        :type=>params[:type]
+        :price=>params[:price]
     )
+    apk_ad[:weight]   = params[:weight] unless params[:weight].nil?
+    apk_ad[:allowmobile]   = params[:allowmobile] unless params[:allowmobile].nil?
+    apk_ad[:ad_type]   = params[:ad_type] unless params[:ad_type].nil?
+    apk_ad[:status]   = params[:status] unless params[:status].nil?
     result_code = 0
     result_msg = 'success'
     begin
