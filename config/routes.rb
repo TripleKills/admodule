@@ -1,4 +1,7 @@
 Admodule::Application.routes.draw do
+
+  match 'regist'=>'user#regist', :via=>[:get,:post]
+  match 'check'=>'user#check', :via=>[:get,:post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
