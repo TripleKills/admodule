@@ -12,12 +12,12 @@
     <file path="/user_controller.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380426094913" ignored="false" />
     <file path="/routes.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380439092695" ignored="false" />
     <file path="/user.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380426500279" ignored="false" />
-    <file path="/apkad_controller.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380439423222" ignored="false" />
+    <file path="/apkad_controller.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380445616857" ignored="false" />
     <file path="/20130929053216_apkad_set_default.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380438373229" ignored="false" />
     <file path="/apk_ad.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380438380060" ignored="false" />
     <file path="/20130929055116_set_apkads_statusdefualt_to_test.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380433889275" ignored="false" />
     <file path="/20130929070508_rename_apk_ads_type.rb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380438334356" ignored="false" />
-    <file path="/addview.html.erb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380442757148" ignored="false" />
+    <file path="/addview.html.erb" changelist="e71f43c6-2ec0-429d-b949-ba1437838582" time="1380444554383" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,55 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="92" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="28" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130929070508_rename_apk_ads_type.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130929070508_rename_apk_ads_type.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="43" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130929053216_apkad_set_default.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130929053216_apkad_set_default.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="65" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="user_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="31" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+            <state line="42" column="24" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,19 +55,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apkad_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="apkad_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/apkad_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="83" selection-start="48" selection-end="126" vertical-scroll-proportion="0.0">
+            <state line="46" column="71" selection-start="1342" selection-end="1386" vertical-scroll-proportion="0.5365854">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addview.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="addview.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/apkad/addview.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="8" selection-start="926" selection-end="926" vertical-scroll-proportion="-0.054481547">
+            <state line="82" column="25" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-19.625">
               <folding />
             </state>
           </provider>
@@ -148,8 +103,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20130929053216_apkad_set_default.rb" />
         <option value="$PROJECT_DIR$/app/models/apk_ad.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/apkad_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/apkad/addview.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/apkad_controller.rb" />
       </list>
     </option>
   </component>
@@ -909,30 +864,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="92" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="5" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130929070508_rename_apk_ads_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -944,16 +878,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0">
+        <state line="7" column="18" selection-start="280" selection-end="289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/apkad_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130929070508_rename_apk_ads_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="83" selection-start="48" selection-end="126" vertical-scroll-proportion="0.0">
+        <state line="2" column="43" selection-start="105" selection-end="105" vertical-scroll-proportion="0.05059022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="28" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.6585366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="92" selection-start="271" selection-end="271" vertical-scroll-proportion="0.07317073">
           <folding />
         </state>
       </provider>
@@ -965,16 +913,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/user_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="280" selection-end="289" vertical-scroll-proportion="0.0">
+        <state line="42" column="24" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/apkad/addview.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="8" selection-start="926" selection-end="926" vertical-scroll-proportion="-0.054481547">
+        <state line="82" column="25" selection-start="2000" selection-end="2000" vertical-scroll-proportion="-19.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/apkad_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="71" selection-start="1342" selection-end="1386" vertical-scroll-proportion="0.5365854">
           <folding />
         </state>
       </provider>

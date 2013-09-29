@@ -65,3 +65,21 @@
         document.forms['BusinessInfoForm'].submit();
     }
 </script>
+
+<% if @save_result==0 %>
+    <script>
+        alert("添加成功");
+    </script>
+<% end %>
+
+<% if @save_result==1 %>
+    <script>
+        alert("添加失败");
+    </script>
+<% end %>
+
+<% if @save_result==2 %>
+    <script>
+        alert("添加失败，广告已存在");
+    </script>
+<% end %>
