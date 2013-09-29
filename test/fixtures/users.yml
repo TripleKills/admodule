@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  imei: MyString
+  sn: MyString
+  androidid: MyString
+  location: MyString
+  pkgs: MyString
+  info: MyString
+
+two:
+  imei: MyString
+  sn: MyString
+  androidid: MyString
+  location: MyString
+  pkgs: MyString
+  info: MyString
