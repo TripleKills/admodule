@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130929053216) do
+ActiveRecord::Schema.define(version: 20130929055116) do
 
   create_table "apk_ads", force: true do |t|
     t.string   "pkg_name"
     t.string   "pic_url"
     t.string   "pkg_url"
-    t.string   "status",      default: "close"
+    t.string   "status",      default: "test"
     t.float    "weight",      default: 1.0
     t.string   "allowmobile", default: "yes"
     t.float    "size"
