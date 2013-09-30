@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130929134531) do
+ActiveRecord::Schema.define(version: 20130930035203) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(version: 20130929134531) do
     t.string   "sn"
     t.string   "androidid"
     t.string   "location"
-    t.string   "pkgs"
+    t.text     "pkgs"
     t.string   "info"
     t.datetime "created_at"
     t.datetime "updated_at"
