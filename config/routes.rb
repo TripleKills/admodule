@@ -8,6 +8,7 @@ Admodule::Application.routes.draw do
   match 'adapkview'=>'apkad#addview', :via=>[:get, :post]
   match 'notify'=>'user#notify', :via=>[:get, :post]
   match 'channel'=>'channel#index', :via=>[:get, :post]
+  match 'requestad'=>'user#requestad', :via=>[:get, :post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

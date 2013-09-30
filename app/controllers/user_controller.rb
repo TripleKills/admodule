@@ -94,6 +94,50 @@ class UserController < ApplicationController
     render :json => {'result_code'=>result_code, 'result_msg'=>result_msg}.to_json
   end
 
+  #拿出所有广告，去除用户已有APK的广告，计算总权重，计算每个广告的概率，生成随机数取出某个广告
+  def requestad
+
+    #找出用户的安装列表
+    s = nil
+    if !params[:userid].nil?
+      begin
+        user = User.find(params[:userid])
+        s = user.pkgs unless (user.pkgs.nil? or user.pkgs.empty?)
+      rescue
+      end
+    end
+
+    all_ad = ApkAd.all
+
+    #计算总权重，去除用户已经装过的apk
+    hs = Array.new
+    total_weight = 0
+    all_ad.each do |x|
+      if s.nil? or !(s.include?(x.pkg_name))
+        hs << x
+        total_weight += x.weight
+      else
+        logger.debug('pkg ' + x.pkg_name + ' is in range, do not add')
+      end
+    end
+
+    #按权重比从列表重取出一条广告
+    random = rand(1..100)
+    last_p = 0
+    ad = all_ad.first
+    hs.each do |x|
+       current_p = x.weight * 100 / total_weight  + last_p
+       if random < current_p
+         ad = x
+         break
+       else
+       last_p = current_p
+       end
+    end
+
+    render :json=>ad.to_json
+  end
+
   private
 
   def log_ad_action(params)
